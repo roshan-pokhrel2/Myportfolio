@@ -1,0 +1,78 @@
+{% extends "index.html" %}
+{% load static  %}
+{% block header %} {% endblock  %}
+{% block body %}
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v6.0"></script>
+<style>
+    header{
+        height: 100px;
+    }
+    .post-container{
+        align-self: start;
+        min-height: 500px;
+        align-items: center;
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        flex-shrink: 5;
+        
+        
+    }
+   
+    .card1{
+        border: 0.5px solid black;
+        justify-content: center;
+        text-align: center;
+        margin: auto;
+        padding: 30px 50px;
+        margin-bottom: 100px;
+    }
+    .img img{
+        max-width: 800px;
+        max-height: 700px;
+    }
+    .info h1{
+        font-size: 45px;
+        font-weight: 800;
+       font-family: 'poppins' ,sans-serif;
+        transform: translate(Uppercase);
+    }
+    .info p{
+        font-size: 25px;
+        line-height: 27px;
+        text-align: left;
+    }
+    .cmt{
+       
+        margin-right: 500px;
+        margin-left: 500px;
+        overflow: hidden;
+        
+    }
+</style>
+<header></header>
+<div class="post-container">
+    <div class="card1">
+        <div class="img">
+            <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__340.jpg">
+        </div>
+        <div class="info">
+            <h1>Roshanpokhrel</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat eaque expedita consequatur obcaecati perspiciatis cupiditate pariatur nam quo? Autem facere quia corrupti delectus dolore officiis error exercitationem nihil quisquam, ipsam iusto enim deleniti architecto possimus aliquam deserunt perspiciatis sapiente maiores, at quam culpa. Officia earum similique deserunt facilis commodi. Quae commodi fuga temporibus quis architecto quia ipsa, recusandae nam dicta inventore fugiat non a eum sed quod necessitatibus quas sint. Sequi earum eaque id veniam laboriosam asperiores voluptates harum excepturi, enim minus mollitia nostrum voluptatum deleniti quis? Iste voluptatum ratione neque maiores maxime dolore ipsum rem. Aut sunt neque qui vel a eos nostrum fugit ipsa harum blanditiis, provident officiis! Deserunt, accusantium dolorum. Dolorum hic aspernatur, possimus ex velit est nulla a tempora, voluptatum accusamus alias dolor amet, incidunt labore. Aliquam voluptate impedit tempora inventore, ipsam accusamus quia delectus veritatis, minus id officia ratione consequuntur obcaecati vel. Nostrum nemo, ad debitis ullam culpa corporis dolor et. Odio labore aperiam repellat ipsum esse consectetur dolor consequatur dignissimos at, saepe quae aliquid, corrupti voluptate nihil optio explicabo sequi. Amet minima quas vitae corporis animi incidunt assumenda adipisci fuga, dicta ducimus, repellat ab explicabo vel voluptates dolores dignissimos cum voluptatum architecto illum harum deserunt. Dolorum cumque sit eligendi aperiam quasi illum voluptates odit, officiis, dicta blanditiis qui dolor beatae ea quisquam praesentium facere ipsum! Corrupti veniam cumque exercitationem maiores vero, deleniti sapiente porro, adipisci sunt, ab eligendi vitae in debitis laboriosam molestiae. Qui quasi, nobis maiores illo hic vitae minima neque veritatis iure.</p>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="ads"></div>
+<div class="cmt">
+
+    <div class="fb-comments" data-href="http://127.0.0.1:8000/fullpost" data-numposts="2" data-width="">
+   
+   </div>
+</div>
+
+{% endblock  %}
+{% block contact %}{% endblock contact %}
